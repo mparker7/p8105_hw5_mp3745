@@ -76,7 +76,7 @@ output = map_dfr(iris_with_missing, replace_miss)
 ## Problem 2
 
 Create a dataframe with all the file names, read in all the data, then tidy
-```{r}
+```{r, message=FALSE}
 file_names_df =
   list.files("./data/", full.names = TRUE) %>% 
   as_tibble() %>% 
